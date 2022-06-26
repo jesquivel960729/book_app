@@ -1,0 +1,20 @@
+<div id="ficha" class="row">
+  <div class="col-md-12">
+    <h2>{{book.title | uppercase}}</h2>
+  </div>
+  <div class="col-md-12">
+    <div *ngIf="book">
+  
+      <div class="text_card"><span class="text_card bold">BookId: </span>{{book.bookId}}</div>
+      <div>
+        <div class="text_card"><span class="text_card bold">Title: </span>{{book.title}}</div>
+        <div class="text_card"><span class="text_card bold">Autores: </span>{{book.authors}}</div>
+        <div class="text_card"><span class="text_card bold">Editorial: </span>{{book.editorial}}</div>
+        <div class="text_card"><span class="text_card bold">Description: </span>{{book.short_description}}</div>
+      </div>
+      <span class="text_card"><a routerLink="/book-lists">Volver al listado</a></span>
+    </div>
+  </div>
+</div>
+
+
